@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Linternilla
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding [class]="css_bg">
+  <h1>Probando linternilla :)</h1>
+
+  <hr>
+
+  <h2>Estado flash: {{flashstatus}}</h2>
+
+  <button ion-button round  (click)="lucecilla()">Linterna</button>
+
+  <hr>
+
+  <h2>BG: {{css_bg}}</h2>
+  <button ion-button round  (click)="switchBg()">Switch BG</button>  
+
+  <hr>
+
+  <h2>Bucle: {{bucle_run}}</h2>
+  <button ion-button round  (click)="doBucle()">Buclear</button>
+
+  <hr>
+
+  <div [innerHTML]="txt_log"></div>
+</ion-content>
